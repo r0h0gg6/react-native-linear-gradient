@@ -32,13 +32,11 @@ public class LinearGradientManager extends LinearGradientManagerSpec<LinearGradi
         return new LinearGradientView(context);
     }
 
-    @Override
     @ReactProp(name = PROP_COLORS)
     public void setColors(LinearGradientView gradientView, ReadableArray colors) {
         gradientView.setColors(colors);
     }
 
-    @Override
     @ReactProp(name = PROP_LOCATIONS)
     public void setLocations(LinearGradientView gradientView, ReadableArray locations) {
         if (locations != null) {
@@ -46,31 +44,26 @@ public class LinearGradientManager extends LinearGradientManagerSpec<LinearGradi
         }
     }
 
-    @Override
     @ReactProp(name = PROP_START_POINT)
     public void setStartPoint(LinearGradientView gradientView, ReadableMap startPoint) {
         gradientView.setStartPoint(startPoint);
     }
 
-    @Override
     @ReactProp(name = PROP_END_POINT)
     public void setEndPoint(LinearGradientView gradientView, ReadableMap endPoint) {
         gradientView.setEndPoint(endPoint);
     }
 
-    @Override
     @ReactProp(name = PROP_USE_ANGLE, defaultBoolean = false)
     public void setUseAngle(LinearGradientView gradientView, boolean useAngle) {
         gradientView.setUseAngle(useAngle);
     }
 
-    @Override
     @ReactProp(name = PROP_ANGLE_CENTER)
     public void setAngleCenter(LinearGradientView gradientView, ReadableMap in) {
         gradientView.setAngleCenter(in);
     }
 
-    @Override
     @ReactProp(name = PROP_ANGLE, defaultFloat = 45.0f)
     public void setAngle(LinearGradientView gradientView, float angle) {
         gradientView.setAngle(angle);
@@ -78,7 +71,6 @@ public class LinearGradientManager extends LinearGradientManagerSpec<LinearGradi
 
     // temporary solution until following issue is resolved:
     // https://github.com/facebook/react-native/issues/3198
-    @Override
     @ReactProp(name = PROP_BORDER_RADII)
     public void setBorderRadii(LinearGradientView gradientView, ReadableArray borderRadii) {
         gradientView.setBorderRadii(borderRadii);

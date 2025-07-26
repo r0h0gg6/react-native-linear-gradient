@@ -15,7 +15,7 @@ buildscript {
             mavenCentral()
         }
         dependencies {
-            classpath 'com.android.tools.build:gradle:7.2.1'
+            classpath 'com.android.tools.build:gradle:8.7.2'
             if (isNewArchitectureEnabled()) {
                 classpath 'com.facebook.react:react-native-gradle-plugin'
             }
@@ -30,10 +30,10 @@ if (isNewArchitectureEnabled()) {
 }
 
 android {
-    compileSdkVersion safeExtGet('compileSdkVersion', 31).toInteger()
+    compileSdkVersion safeExtGet('compileSdkVersion', 35).toInteger()
     defaultConfig {
-        minSdkVersion safeExtGet('minSdkVersion', 21)
-        targetSdkVersion safeExtGet('targetSdkVersion', 31)
+        minSdkVersion safeExtGet('minSdkVersion', 24)
+        targetSdkVersion safeExtGet('targetSdkVersion', 35)
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
     }
     sourceSets {
