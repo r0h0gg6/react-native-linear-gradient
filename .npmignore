@@ -1,0 +1,37 @@
+# Development files
+example/
+.github/
+.flowconfig
+.gitignore
+yarn.lock
+
+# Documentation
+*.md
+!README.md
+images/
+
+# Build artifacts
+build/
+*.log
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+__tests__/
+*.test.js
+*.test.ts
+jest.config.js
+jest.setup.js
+jest/
+
+# Git
+.git/
+.gitattributes 

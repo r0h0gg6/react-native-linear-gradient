@@ -61,3 +61,36 @@ buck-out/
 
 # CocoaPods
 /ios/Pods/
+
+# Development files (from .npmignore)
+example/
+.github/
+.flowconfig
+yarn.lock
+
+# Documentation (from .npmignore)
+*.md
+!README.md
+images/
+
+# Additional logs
+*.log
+
+# IDE files (from .npmignore)
+.vscode/
+*.swp
+*.swo
+
+# OS files (from .npmignore)
+Thumbs.db
+
+# Testing (from .npmignore)
+__tests__/
+*.test.js
+*.test.ts
+jest.config.js
+jest.setup.js
+jest/
+
+# Git attributes
+.gitattributes
